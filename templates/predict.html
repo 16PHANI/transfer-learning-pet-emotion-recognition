@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Predict | Pet Emotion Recognition{% endblock %}
+
+{% block content %}
+<div class="predict-container">
+    <h2>Upload your pet’s image</h2>
+    <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit" class="btn">Detect Emotion</button>
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        <h3>Predicted Emotion:</h3>
+        <p>{{ prediction }}</p>
+        {% if image_path %}
+            <img src="{{ image_path }}" alt="Uploaded Pet Image" class="uploaded-img">
+        {% endif %}
+        <a href="{{ url_for('care_tips', emotion=prediction.split(' ')[0]) }}" class="btn tips-btn">View Care Tips</a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

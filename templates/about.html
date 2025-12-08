@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}About | Pet Emotion Recognition{% endblock %}
+
+{% block content %}
+<section class="about-section">
+    <h2>🐾 About This Project</h2>
+    <p>Our AI-powered Pet Emotion Recognition system helps you understand your pet’s emotions through images. Using advanced deep learning techniques, we classify pets into <strong>Happy, Sad, Angry, Hungry, or Other</strong>.</p>
+
+    <div class="about-cards">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/resnet50.png') }}" alt="ResNet50 Model">
+            <h3>Deep Learning Model</h3>
+            <p>We use <strong>ResNet50</strong>, a state-of-the-art convolutional neural network for image recognition of pets’ emotions.</p>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/flask.png') }}" alt="Flask Framework">
+            <h3>Built With Flask</h3>
+            <p>The web interface is powered by <strong>Flask</strong>, making it easy to upload images and get real-time emotion predictions.</p>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/dataset.png') }}" alt="Dataset">
+            <h3>Custom Dataset</h3>
+            <p>Trained on a curated dataset of pet images categorized by emotion, including <strong>Happy, Sad, Angry, Hungry</strong> to ensure accurate predictions.</p>
+        </div>
+    </div>
+
+    <p class="extra-info">Our goal is to make understanding and caring for your pets easier, interactive, and fun! ❤️🐶🐱</p>
+</section>
+{% endblock %}

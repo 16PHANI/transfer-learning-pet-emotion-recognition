@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Pet Care Tips | Pet Emotion Recognition{% endblock %}
+
+{% block content %}
+<section class="care-tips-section">
+    <h2>💡 Pet Care Tips</h2>
+
+    {% if emotion %}
+        <div class="emotion-card {{ emotion|lower }}">
+            <h3>Detected Emotion: {{ emotion }}</h3>
+            <img src="{{ url_for('static', filename='images/' + emotion|lower + '.png') }}" alt="{{ emotion }}">
+            
+            <div class="tips">
+                {% if emotion == 'Happy' %}
+                    <p>😊 Your pet is happy! Keep the joy going with playtime, treats, and cuddles.</p>
+                {% elif emotion == 'Sad' %}
+                    <p>😢 Your pet seems sad. Take your pet for a walk, offer comfort, and show affection.</p>
+                {% elif emotion == 'Angry' %}
+                    <p>😡 Your pet is angry. Give them space, let them calm down, or engage in a fun activity.</p>
+                {% else %}
+                    <p>🐾 Your pet's emotion is neutral or unclear. Observe and ensure a safe, happy environment.</p>
+                {% endif %}
+            </div>
+
+            <div class="food-tips">
+                <h4>🍖 Food & Care Tips:</h4>
+                {% if emotion == 'Happy' %}
+                    <ul>
+                        <li>Provide their favorite treats.</li>
+                        <li>Maintain a balanced diet to keep them energetic.</li>
+                        <li>Regular hydration.</li>
+                    </ul>
+                {% elif emotion == 'Sad' %}
+                    <ul>
+                        <li>Offer comfort food like wet food or snacks they love.</li>
+                        <li>Ensure cozy bedding and a safe space.</li>
+                        <li>Spend quality time with them.</li>
+                    </ul>
+                {% elif emotion == 'Angry' %}
+                    <ul>
+                        <li>Avoid overfeeding; keep a calm environment.</li>
+                        <li>Engage them with interactive toys.</li>
+                        <li>Provide mental stimulation and gentle care.</li>
+                    </ul>
+                {% else %}
+                    <ul>
+                        <li>Maintain regular feeding schedule.</li>
+                        <li>Ensure clean water and healthy treats.</li>
+                        <li>Monitor behavior for signs of stress or illness.</li>
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+    {% else %}
+        <p class="no-emotion">Upload a pet image first to see personalized care tips!</p>
+    {% endif %}
+</section>
+{% endblock %}

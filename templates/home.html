@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Pet Emotion Recognition{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="hero-text">
+        <h1>🐶 Welcome </h1>
+        <p>Discover your pet's emotions with AI! Upload an image and get insights — Happy, Angry, Sad, or Other.</p>
+        <a href="{{ url_for('predict_page') }}" class="btn">Upload & Predict</a>
+        <a href="{{ url_for('care_tips', emotion='happy') }}" class="btn tips-btn">Pet Care Tips</a>
+    </div>
+    <div class="hero-images">
+        <img src="{{ url_for('static', filename='images/pet1.jpg') }}" alt="Pet 1">
+        <img src="{{ url_for('static', filename='images/pet2.jpg') }}" alt="Pet 2">
+        <img src="{{ url_for('static', filename='images/pet3.jpg') }}" alt="Pet 3">
+    </div>
+</section>
+
+<section class="features-section">
+    <h2>Why Use Our AI?</h2>
+    <div class="features-cards">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/ai_icon.png') }}" alt="AI Icon">
+            <h3>Smart Detection</h3>
+            <p>Our AI accurately identifies your pet’s emotions in real-time using deep learning.</p>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/care_icon.png') }}" alt="Care Icon">
+            <h3>Pet Care Tips</h3>
+            <p>Get personalized suggestions based on your pet’s mood to keep them happy.</p>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/fun_icon.png') }}" alt="Fun Icon">
+            <h3>Fun & Interactive</h3>
+            <p>Engage with your pets while learning about their emotions.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

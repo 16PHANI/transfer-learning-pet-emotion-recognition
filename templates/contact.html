@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Contact | Pet Emotion Recognition{% endblock %}
+
+{% block content %}
+<section class="contact-section">
+    <h2>📬 Get in Touch</h2>
+    <p>Reach out with questions, suggestions, or feedback about our Pet Emotion AI project.</p>
+
+    <div class="contact-cards">
+        <div class="card">
+            <h3>Email Us</h3>
+            <p><a href="mailto:support@petemotionai.com">support@petemotionai.com</a></p>
+        </div>
+        <div class="card">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        </div>
+        <div class="card">
+            <h3>Follow Us</h3>
+            <p>
+                <a href="#">🐦 Twitter</a> |
+                <a href="#">📘 Facebook</a> |
+                <a href="#">📸 Instagram</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form method="post" action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

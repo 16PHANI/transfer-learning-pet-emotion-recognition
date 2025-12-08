@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Pet Emotion Recognition{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="light-mode">
+    <nav class="navbar">
+        <h1>🐾 Pet Emotion Recognition</h1>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            <li><a href="{{ url_for('predict_page') }}">Predict</a></li>
+            <li><a href="{{ url_for('daily_routine') }}">Daily Routine</a></li>
+            <li><a href="{{ url_for('care_tips', emotion='happy') }}">Care Tips</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </nav>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

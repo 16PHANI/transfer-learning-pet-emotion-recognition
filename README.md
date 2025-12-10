@@ -179,8 +179,10 @@ Mobile app version
 More accurate multi-emotion recognition
 
 🤝 Contributors
-
 BASTHATI RAMYA RAMANI
-BOYINAPALLI PHANI SHANKAR                                                   
-BATHULA NAGA MANOJ                                                              
+
+BOYINAPALLI PHANI SHANKAR 
+
+BATHULA NAGA MANOJ       
+
 BHATTU JAGADEESH PRASAD                                                    

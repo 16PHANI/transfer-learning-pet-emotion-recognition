@@ -13,9 +13,9 @@ Backend: Python (Flask / Django)
 
 Model: Transfer Learning (ResNet50 / etc.)
 
-Dataset: Cats & Dogs Emotional Dataset (linked via Google Drive)
+Dataset: Cats & Dogs Emotional Dataset 
 
-Model File: model.h5 (linked via Google Drive)
+Model File: model.h5 
 The system also includes multiple pages such as Home, About, Daily Routine, Pet Care Tips, Prediction, and Contact.
 📌 Features
 🖥️ Frontend Pages
@@ -138,7 +138,7 @@ pet_emotion/
 📥 Download Dataset & Model
 📌 Dataset (Google Drive)
 
-🔗 Add your dataset link here
+🔗 https://drive.google.com/drive/folders/1FVFD8JmpD3RhNSsL7jim48iWewO9bz8H?usp=sharing
 
 📌 Model File (model.h5)
 

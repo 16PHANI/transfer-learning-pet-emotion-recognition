@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Daily Routine | Pet Emotion Recognition{% endblock %}
+
+{% block content %}
+<section class="daily-routine-section">
+    <h2>📅 Daily Routine for Your Pet</h2>
+    <p>Plan your pet’s day efficiently! Click on each routine card to see tips, some of which may vary based on your pet’s current emotion.</p>
+
+    <div class="routine-cards">
+        <div class="card">
+            <h3>🛏️ Morning Wake-Up</h3>
+            <div class="card-content">
+                <p>Greet your pet gently. Provide fresh water and let them stretch. If your pet seems <strong>Hungry</strong>, serve a small snack first.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3>🍽️ Breakfast</h3>
+            <div class="card-content">
+                <p>Feed a balanced meal appropriate for your pet’s age and size. Reward good behavior. Emotion tip: <strong>Happy</strong> pets enjoy interactive feeding games.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3>🚶‍♂️ Morning Walk / Exercise</h3>
+            <div class="card-content">
+                <p>Take your pet for a walk or play indoors if the weather is bad. <strong>Alert</strong> or <strong>Excited</strong> pets may need extra mental stimulation.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3>🧼 Grooming / Hygiene</h3>
+            <div class="card-content">
+                <p>Brush fur, clean ears, and check nails. Calm pets enjoy this more, while <strong>Scared</strong> pets may need gentle reassurance.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3>🍖 Lunch / Snack</h3>
+            <div class="card-content">
+                <p>Provide a light meal or healthy treats. Avoid overfeeding. Adjust portion if pet looks <strong>Hungry</strong> or <strong>Relaxed</strong>.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3>🛌 Nap / Rest Time</h3>
+            <div class="card-content">
+                <p>Ensure your pet has a comfortable resting area. Emotion tip: <strong>Sad</strong> pets benefit from quiet and cozy spots.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3>🎾 Playtime / Mental Stimulation</h3>
+            <div class="card-content">
+                <p>Engage with toys, training exercises, or puzzle feeders. <strong>Angry</strong> or <strong>Alert</strong> pets may need interactive games to release energy.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3>🌙 Evening Dinner</h3>
+            <div class="card-content">
+                <p>Provide a nutritious dinner. Emotion tip: <strong>Hungry</strong> pets may need a slightly earlier feeding schedule.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3>💤 Nighttime Routine</h3>
+            <div class="card-content">
+                <p>Wind down with cuddles or gentle play. Ensure fresh water is available and a quiet sleeping space. <strong>Relaxed</strong> pets sleep better after calm interaction.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="daily-tips">
+        <h3>💡 Tips for All Pets</h3>
+        <ul>
+            <li>Maintain consistent feeding times and portions.</li>
+            <li>Monitor your pet’s mood and adjust activities accordingly.</li>
+            <li>Provide clean water and a safe environment at all times.</li>
+            <li>Use emotion recognition to tailor care and bonding activities.</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

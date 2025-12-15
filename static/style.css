@@ -1,0 +1,399 @@
+/* ---------------- General Styles ---------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+.light-mode {
+    background: #f0f8ff;
+    color: #222;
+}
+
+.dark-mode {
+    background: #121212;
+    color: #f0f8ff;
+}
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background: #ff7f50;
+    color: white;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.25);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: transform 0.3s;
+}
+
+.nav-links a:hover {
+    transform: scale(1.15);
+}
+
+.theme-toggle {
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+/* ---------------- Content ---------------- */
+.content {
+    padding: 50px;
+}
+
+.predict-container, .care-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.btn {
+    padding: 15px 30px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 12px;
+    background: #ff7f50;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #ff6347;
+}
+
+.uploaded-img {
+    max-width: 100%;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.tip {
+    background: #ffe4e1;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+/* ---------------- Animations ---------------- */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-25px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 40px;
+    background: #fff8f0;
+    border-radius: 25px;
+    margin: 30px auto;
+}
+
+.hero-text {
+    flex: 1 1 500px;
+    text-align: left;
+    margin: 25px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    color: #ff7f50;
+    margin-bottom: 30px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+    color: #333;
+}
+
+.hero-images {
+    flex: 1 1 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px;
+}
+
+.hero-images img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+.hero-images img:hover {
+    transform: scale(1.12);
+}
+
+/* ---------------- Features Section ---------------- */
+.features-section {
+    text-align: center;
+    padding: 70px 40px;
+}
+
+.features-section h2 {
+    font-size: 3rem;
+    color: #ff7f50;
+    margin-bottom: 60px;
+}
+
+.features-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.features-cards .card {
+    background: #fff;
+    border-radius: 25px;
+    padding: 35px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-cards .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.features-cards .card img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.features-cards .card h3 {
+    margin-bottom: 15px;
+    color: #ff6347;
+    font-size: 1.4rem;
+}
+
+.features-cards .card p {
+    font-size: 1.15rem;
+    color: #555;
+}
+
+/* ---------------- About Section ---------------- */
+.about-section {
+    padding: 70px 40px;
+    text-align: center;
+    background: #f9f9ff;
+    border-radius: 25px;
+    margin: 30px auto;
+}
+
+.about-section h2 {
+    font-size: 3rem;
+    color: #ff7f50;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+.about-cards .card {
+    background: #fff;
+    border-radius: 25px;
+    padding: 35px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-cards .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.about-cards .card img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.about-cards .card h3 {
+    color: #ff6347;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.extra-info {
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+/* ---------------- Care Tips Section ---------------- */
+.care-tips-section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.care-tips-section h2 {
+    font-size: 3.2rem;
+    color: #ff7f50;
+    margin-bottom: 50px;
+}
+
+.emotion-card {
+    background: #fff;
+    border-radius: 25px;
+    padding: 45px;
+    max-width: 750px;
+    margin: 0 auto;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.emotion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.3);
+}
+
+.emotion-card img {
+    width: 180px;
+    margin: 25px 0;
+}
+
+.tips p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.food-tips ul {
+    text-align: left;
+    list-style: disc;
+    margin: 20px auto;
+    padding-left: 30px;
+    max-width: 500px;
+    font-size: 1.3rem;
+}
+
+.no-emotion {
+    font-size: 1.8rem;
+    color: #666;
+    margin-top: 60px;
+}
+
+/* ---------------- Daily Routine Section ---------------- */
+.daily-routine-section {
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.daily-routine-section h2 {
+    font-size: 3rem;
+    color: #ff7f50;
+    margin-bottom: 30px;
+}
+
+.daily-routine-section p {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+.routine-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.routine-cards .card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.routine-cards .card h3 {
+    color: #ff7f50;
+    margin-bottom: 15px;
+}
+
+.routine-cards .card-content {
+    display: none;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.routine-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.daily-tips {
+    margin-top: 40px;
+    font-size: 1.3rem;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.daily-tips ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+.result {
+    text-align: center;
+}
+
+.uploaded-img {
+    max-width: 350px;   /* limits image size */
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+.tips-btn {
+    display: inline-block;
+    margin-top: 15px;
+}

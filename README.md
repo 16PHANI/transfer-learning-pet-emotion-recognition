@@ -129,28 +129,29 @@ pet_emotion/
 │   ├── care_tips.html
 │   └── contact.html
 │
-│── model/
-│   └── model.h5 (stored in Drive)
+│
+│__ model.h5 (stored in Drive)
 │
 │── app.py
 │── README.md
 │── requirements.txt
 📥 Download Dataset & Model
+
 📌 Dataset (Google Drive)
 
-🔗 Add your dataset link here
+🔗 https://drive.google.com/drive/folders/1y4J2lQLh2WJFo7mBUtjsH10OMsaZgVFR?usp=sharing
 
 📌 Model File (model.h5)
 
-🔗 https://drive.google.com/file/d/1lpGqbORF_MGPFQzE-bVG4DR-i51WKzLn/view?usp=sharing
+🔗 https://drive.google.com/file/d/1zm-to2vgzAOu6EzVfGktCYcP7eqJRfS3/view?usp=drive_link
 
 ▶️ How to Run the Project Locally
 1️⃣ Install Dependencies
 pip install -r requirements.txt
 
-2️⃣ Place model.h5 in /model/ folder
+2️⃣ model.h5 
 
-(or update the path in app.py)
+( update the path in app.py)
 
 3️⃣ Start Server
 python app.py
